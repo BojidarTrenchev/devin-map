@@ -1,0 +1,122 @@
+       #map {
+        height: 100%;
+        width: 100%;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+
+      div.main{
+        position: absolute;
+        width: 300px;
+        height: 500px;
+        align-self: center;     
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 99;
+        margin: auto;
+        margin-top: 50px;
+        display:inline-block;
+        
+        }
+
+      div.info{
+        position: absolute;
+        width: 350px;
+        /* height: 400px; */
+        align-self: center;     
+        background-color: #304B77;
+        opacity: 0.8;   
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;   
+        margin: auto;
+        display:inline-block;
+        overflow-y: auto;
+        }
+
+
+        .closeButton{
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          margin-top: 10px;
+          margin-right: 10px;
+          color: white;
+        }
+
+        @font-face {
+          font-family: Phenomena;
+          src: url("Phenomena-Bold.otf");
+        }
+
+      .info>h2{
+          overflow: auto;
+          text-align: center;
+          color: white;
+          padding-top: 3px;  
+          font-family: Phenomena;  
+          font-size: 30px;   
+        }
+
+        .info>p{
+          margin: 30px;
+          color: white;
+          font-family: Roboto, Arial;
+          font-size: 15px;
+
+        }
+
+        #image{
+          width: 455px;
+          height: 270px;    
+          margin: 150px 0 0 -390px;
+        }
+
+        #legend{
+          position: absolute;
+          z-index: 100;
+          bottom: 30px;
+          width:20px;
+          background-color: #B7B7B7;     
+          opacity: 0.75;   
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          font-family: Roboto;
+          font-size: 12;
+
+        }
+
+        th{
+          padding-left: 10px;
+          padding-top: 5px;
+          padding-right: 5px;
+          padding-bottom: 5px;
+        }
+        th>img{
+          width: 20px;
+        }
+
+        @media screen and (max-width: 1000px) {
+          div.info {
+            width: 300px;
+            height: 400px;
+            margin: 0;
+          }
+          #image{
+            width: 300px;
+            height: 200px;
+            margin-left: 0px;
+            margin-top: 400px;
+            margin-bottom: 20px;
+            position: relative;
+          }
+        }     
+      
